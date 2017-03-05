@@ -16,6 +16,8 @@
 		869534221E6CCB85004A2305 /* Schulzzug_iOS_JSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 869534211E6CCB85004A2305 /* Schulzzug_iOS_JSTests.m */; };
 		8695342D1E6CCB85004A2305 /* Schulzzug_iOS_JSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8695342C1E6CCB85004A2305 /* Schulzzug_iOS_JSUITests.m */; };
 		8695343B1E6CCB9F004A2305 /* Schulzzug-JS in Resources */ = {isa = PBXBuildFile; fileRef = 8695343A1E6CCB9F004A2305 /* Schulzzug-JS */; };
+		8695343E1E6CCBC4004A2305 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8695343D1E6CCBC3004A2305 /* WebKit.framework */; };
+		869534431E6CCBE9004A2305 /* XWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869534421E6CCBE9004A2305 /* XWebView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		8695342C1E6CCB85004A2305 /* Schulzzug_iOS_JSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Schulzzug_iOS_JSUITests.m; sourceTree = "<group>"; };
 		8695342E1E6CCB85004A2305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8695343A1E6CCB9F004A2305 /* Schulzzug-JS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Schulzzug-JS"; path = "../../Schulzzug-JS"; sourceTree = "<group>"; };
+		8695343D1E6CCBC3004A2305 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		869534401E6CCBD3004A2305 /* XWebView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWebView.framework; path = "../../../Library/Developer/Xcode/DerivedData/XWebView.iOS-eeuhgvuklteaincdhgohgmbykapj/Build/Products/Debug-iphonesimulator/XWebView.framework"; sourceTree = "<group>"; };
+		869534421E6CCBE9004A2305 /* XWebView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XWebView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8695343E1E6CCBC4004A2305 /* WebKit.framework in Frameworks */,
+				869534431E6CCBE9004A2305 /* XWebView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +90,12 @@
 		869533FB1E6CCB85004A2305 = {
 			isa = PBXGroup;
 			children = (
+				869534421E6CCBE9004A2305 /* XWebView.framework */,
 				869534061E6CCB85004A2305 /* Schulzzug-iOS-JS */,
 				869534201E6CCB85004A2305 /* Schulzzug-iOS-JSTests */,
 				8695342B1E6CCB85004A2305 /* Schulzzug-iOS-JSUITests */,
 				869534051E6CCB85004A2305 /* Products */,
+				8695343C1E6CCBC3004A2305 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +150,15 @@
 				8695342E1E6CCB85004A2305 /* Info.plist */,
 			);
 			path = "Schulzzug-iOS-JSUITests";
+			sourceTree = "<group>";
+		};
+		8695343C1E6CCBC3004A2305 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				869534401E6CCBD3004A2305 /* XWebView.framework */,
+				8695343D1E6CCBC3004A2305 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +450,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Schulzzug-iOS-JS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.frogg.Schulzzug-iOS-JS";
@@ -444,6 +466,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Schulzzug-iOS-JS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.frogg.Schulzzug-iOS-JS";
