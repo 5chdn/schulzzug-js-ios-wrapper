@@ -15,6 +15,7 @@
 		869534171E6CCB85004A2305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869534151E6CCB85004A2305 /* LaunchScreen.storyboard */; };
 		869534221E6CCB85004A2305 /* Schulzzug_iOS_JSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 869534211E6CCB85004A2305 /* Schulzzug_iOS_JSTests.m */; };
 		8695342D1E6CCB85004A2305 /* Schulzzug_iOS_JSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8695342C1E6CCB85004A2305 /* Schulzzug_iOS_JSUITests.m */; };
+		8695343B1E6CCB9F004A2305 /* Schulzzug-JS in Resources */ = {isa = PBXBuildFile; fileRef = 8695343A1E6CCB9F004A2305 /* Schulzzug-JS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		869534281E6CCB85004A2305 /* Schulzzug-iOS-JSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Schulzzug-iOS-JSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8695342C1E6CCB85004A2305 /* Schulzzug_iOS_JSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Schulzzug_iOS_JSUITests.m; sourceTree = "<group>"; };
 		8695342E1E6CCB85004A2305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8695343A1E6CCB9F004A2305 /* Schulzzug-JS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Schulzzug-JS"; path = "../../Schulzzug-JS"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		869534061E6CCB85004A2305 /* Schulzzug-iOS-JS */ = {
 			isa = PBXGroup;
 			children = (
+				8695343A1E6CCB9F004A2305 /* Schulzzug-JS */,
 				8695340A1E6CCB85004A2305 /* AppDelegate.h */,
 				8695340B1E6CCB85004A2305 /* AppDelegate.m */,
 				8695340D1E6CCB85004A2305 /* ViewController.h */,
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				869534171E6CCB85004A2305 /* LaunchScreen.storyboard in Resources */,
+				8695343B1E6CCB9F004A2305 /* Schulzzug-JS in Resources */,
 				869534141E6CCB85004A2305 /* Assets.xcassets in Resources */,
 				869534121E6CCB85004A2305 /* Main.storyboard in Resources */,
 			);
