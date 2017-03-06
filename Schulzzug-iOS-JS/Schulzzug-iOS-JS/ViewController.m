@@ -24,6 +24,8 @@
     
     [self.webViewGameRenderer loadRequest:[NSURLRequest requestWithURL:url]];
     
+    self.webViewGameRenderer.delegate = self;
+    
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
     
@@ -70,6 +72,13 @@
         
     }
     
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    NSString *actionType = request.URL.absoluteString;
+    NSLog(@"%@",actionType);
+    
+    return YES;
 }
 
 
