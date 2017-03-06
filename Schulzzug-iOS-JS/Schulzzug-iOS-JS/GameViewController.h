@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ViewController : UIViewController <UIWebViewDelegate>
+@interface GameViewController : UIViewController <UIWebViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIWebView *webViewGameRenderer;
 @property (strong, nonatomic) UIImpactFeedbackGenerator* tapticEngine;
