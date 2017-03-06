@@ -44,6 +44,9 @@
     [self.view addGestureRecognizer:swipeLeft];
     [self.view addGestureRecognizer:swipeRight];
     
+    self.tapticEngine = [UIImpactFeedbackGenerator new];
+    [self.tapticEngine prepare];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -75,8 +78,11 @@
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    NSString *actionType = request.URL.absoluteString;
-    NSLog(@"%@",actionType);
+    NSString *actionType = request.URL.host;
+    
+    if([actionType isEqualToString:@"smashed-wall"]) {
+        [self.tapticEngine impactOccurred];
+    }
     
     return YES;
 }
