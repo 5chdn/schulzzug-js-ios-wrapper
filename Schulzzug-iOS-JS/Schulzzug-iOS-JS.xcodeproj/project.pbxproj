@@ -445,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 52U6XAJSSF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,7 +454,7 @@
 				);
 				INFOPLIST_FILE = "Schulzzug-iOS-JS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.frogg.Schulzzug-iOS-JS";
+				PRODUCT_BUNDLE_IDENTIFIER = schulzzug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -462,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 52U6XAJSSF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,7 +472,7 @@
 				);
 				INFOPLIST_FILE = "Schulzzug-iOS-JS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.frogg.Schulzzug-iOS-JS";
+				PRODUCT_BUNDLE_IDENTIFIER = schulzzug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -544,6 +546,7 @@
 				869534331E6CCB85004A2305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		869534341E6CCB85004A2305 /* Build configuration list for PBXNativeTarget "Schulzzug-iOS-JSTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +555,7 @@
 				869534361E6CCB85004A2305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		869534371E6CCB85004A2305 /* Build configuration list for PBXNativeTarget "Schulzzug-iOS-JSUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +564,7 @@
 				869534391E6CCB85004A2305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
