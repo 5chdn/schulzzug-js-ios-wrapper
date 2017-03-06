@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#define defaultgameWidth 375
+
 @interface ViewController ()
 
 @end
@@ -28,6 +30,10 @@
     // Setting the swipe direction.
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
+    
+    
+    CGFloat scaleFactor = self.view.frame.size.width / defaultgameWidth;
+    self.webViewGameRenderer.transform = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
     
     [self.webViewGameRenderer.scrollView.panGestureRecognizer requireGestureRecognizerToFail:swipeLeft];
     [self.webViewGameRenderer.scrollView.panGestureRecognizer requireGestureRecognizerToFail:swipeRight];

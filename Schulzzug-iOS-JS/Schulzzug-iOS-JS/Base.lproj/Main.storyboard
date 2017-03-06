@@ -22,18 +22,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zO6-wH-1Ki">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="7G9-kS-qmS"/>
+                                    <constraint firstAttribute="height" constant="667" id="pFD-GH-ENV"/>
+                                </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="zO6-wH-1Ki" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qf2-6j-24w"/>
-                            <constraint firstAttribute="trailing" secondItem="zO6-wH-1Ki" secondAttribute="trailing" id="SZ6-Gq-tss"/>
-                            <constraint firstItem="zO6-wH-1Ki" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n9Y-h7-XHy"/>
-                            <constraint firstItem="zO6-wH-1Ki" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="sfp-Am-KWV"/>
+                            <constraint firstItem="zO6-wH-1Ki" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lr7-bQ-FVu"/>
+                            <constraint firstItem="zO6-wH-1Ki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ReG-a9-Yvd"/>
                         </constraints>
                     </view>
                     <connections>
