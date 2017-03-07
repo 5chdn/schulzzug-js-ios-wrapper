@@ -33,16 +33,17 @@
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
     
+    swipeLeft.delegate = self;
+    swipeRight.delegate = self;
     
     CGFloat scaleFactor = self.view.frame.size.width / defaultgameWidth;
     self.webViewGameRenderer.transform = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
     
-    [self.webViewGameRenderer.scrollView.panGestureRecognizer requireGestureRecognizerToFail:swipeLeft];
-    [self.webViewGameRenderer.scrollView.panGestureRecognizer requireGestureRecognizerToFail:swipeRight];
-    
     // Adding the swipe gesture on WebView
     [self.view addGestureRecognizer:swipeLeft];
     [self.view addGestureRecognizer:swipeRight];
+
+    
     
     self.tapticEngine = [UIImpactFeedbackGenerator new];
     [self.tapticEngine prepare];
@@ -88,6 +89,10 @@
         [self.tapticEngine impactOccurred];
     }
     
+    return YES;
+}
+
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     return YES;
 }
 
