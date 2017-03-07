@@ -6,15 +6,15 @@
 //  Copyright © 2017 Frederik Riedel. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "GameViewController.h"
 
 #define defaultgameWidth 375
 
-@interface ViewController ()
+@interface GameViewController ()
 
 @end
 
-@implementation ViewController
+@implementation GameViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

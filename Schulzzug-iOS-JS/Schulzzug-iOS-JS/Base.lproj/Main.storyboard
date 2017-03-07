@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7JL-rG-6Jh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KMg-N0-L6U">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,79 +10,51 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="XTz-Sl-BLe">
+        <scene sceneID="eTS-64-8WA">
             <objects>
-                <viewController id="7JL-rG-6Jh" sceneMemberID="viewController">
+                <viewController id="KMg-N0-L6U" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="V5c-pc-mKB"/>
-                        <viewControllerLayoutGuide type="bottom" id="FP0-Jb-msJ"/>
+                        <viewControllerLayoutGuide type="top" id="a3P-78-CVe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fxv-gu-o5x"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nKu-lc-KrO">
+                    <view key="view" contentMode="scaleToFill" id="4j5-gW-uig">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="PBB-og-vjU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="5VD-QS-5rJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Qwo-G4-NqN">
-                                <rect key="frame" x="117" y="206" width="140" height="254"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbG-f7-lKv">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="78"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="78" id="9Bt-cF-uGs"/>
-                                            <constraint firstAttribute="width" constant="140" id="qEn-P7-Nbh"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Leaderboard" backgroundImage="button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ7-iE-39X">
-                                        <rect key="frame" x="0.0" y="90" width="140" height="76"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="76" id="nOk-iP-gzh"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                        <state key="normal" title="Select Character" backgroundImage="button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iz2-gy-wFo">
-                                        <rect key="frame" x="0.0" y="178" width="140" height="76"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="76" id="VjP-Md-TSU"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Start Game" backgroundImage="button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="4Dx-qX-56g"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVO-61-Dbq">
+                                <rect key="frame" x="123" y="297" width="129" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Start" backgroundImage="button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Rx6-0A-LKe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PBB-og-vjU" firstAttribute="leading" secondItem="nKu-lc-KrO" secondAttribute="leading" id="EkL-EC-Y8t"/>
-                            <constraint firstItem="Qwo-G4-NqN" firstAttribute="centerY" secondItem="nKu-lc-KrO" secondAttribute="centerY" id="Gwf-Ay-47v"/>
-                            <constraint firstItem="Qwo-G4-NqN" firstAttribute="centerX" secondItem="nKu-lc-KrO" secondAttribute="centerX" id="NfO-Rt-V3J"/>
-                            <constraint firstItem="PBB-og-vjU" firstAttribute="bottom" secondItem="FP0-Jb-msJ" secondAttribute="top" id="V5I-kK-c5u"/>
-                            <constraint firstItem="PBB-og-vjU" firstAttribute="centerX" secondItem="Qwo-G4-NqN" secondAttribute="centerX" id="bHP-g7-lrK"/>
-                            <constraint firstItem="PBB-og-vjU" firstAttribute="centerY" secondItem="Qwo-G4-NqN" secondAttribute="centerY" id="fye-0Y-V1p"/>
+                            <constraint firstItem="jVO-61-Dbq" firstAttribute="centerX" secondItem="5VD-QS-5rJ" secondAttribute="centerX" id="PMt-6q-DFD"/>
+                            <constraint firstItem="5VD-QS-5rJ" firstAttribute="leading" secondItem="4j5-gW-uig" secondAttribute="leading" id="XiF-LP-pkJ"/>
+                            <constraint firstItem="5VD-QS-5rJ" firstAttribute="top" secondItem="4j5-gW-uig" secondAttribute="top" id="YDG-CM-SCQ"/>
+                            <constraint firstItem="Fxv-gu-o5x" firstAttribute="top" secondItem="5VD-QS-5rJ" secondAttribute="bottom" id="fgg-Sn-6yz"/>
+                            <constraint firstAttribute="trailing" secondItem="5VD-QS-5rJ" secondAttribute="trailing" id="gC6-3z-EVU"/>
+                            <constraint firstItem="jVO-61-Dbq" firstAttribute="centerY" secondItem="5VD-QS-5rJ" secondAttribute="centerY" id="wuL-7t-IBO"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0un-Qr-DEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bnn-gu-0pE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-679.20000000000005" y="124.58770614692655"/>
+            <point key="canvasLocation" x="-746.39999999999998" y="124.58770614692655"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -118,7 +90,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="button" width="258" height="144"/>
+        <image name="button" width="129" height="72"/>
         <image name="launch" width="750" height="1334"/>
     </resources>
 </document>

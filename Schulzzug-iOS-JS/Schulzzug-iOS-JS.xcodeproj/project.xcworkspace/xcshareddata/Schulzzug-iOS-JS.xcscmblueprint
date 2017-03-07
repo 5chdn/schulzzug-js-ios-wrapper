@@ -7,7 +7,11 @@
     "83B539A95A5AE91A6389026D39B4B7C9A7B6544E" : 9223372036854775807,
     "267DF568EF47C289BDD9376CDD4C3E295F1DEA18" : 9223372036854775807
   },
+<<<<<<< HEAD
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AA0EA3DC-22AD-4F39-A904-7888AF12DEB3",
+=======
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "97663657-A0EE-43CE-A0BA-EAC569345165",
+>>>>>>> 1b10656d357e8ff1b0a6a6fbed52cbcd6040e7ac
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "83B539A95A5AE91A6389026D39B4B7C9A7B6544E" : "Schulzzug-iOS-JS\/",
     "267DF568EF47C289BDD9376CDD4C3E295F1DEA18" : "Schulzzug-iOS-JS\/Schulzzug-JS\/"
@@ -22,7 +26,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "267DF568EF47C289BDD9376CDD4C3E295F1DEA18"
     },
     {
+<<<<<<< HEAD
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Bestes-SPD-Hackathon-Team\/Schulzzug-iOS-JS.git",
+=======
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Bestes-SPD-Hackathon-Team\/Schulzzug-iOS-JS.git",
+>>>>>>> 1b10656d357e8ff1b0a6a6fbed52cbcd6040e7ac
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "83B539A95A5AE91A6389026D39B4B7C9A7B6544E"
     }
