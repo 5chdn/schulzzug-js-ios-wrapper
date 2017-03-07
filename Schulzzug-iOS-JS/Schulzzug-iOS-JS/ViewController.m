@@ -50,6 +50,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+    [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"activateIosMode()"];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -65,13 +69,13 @@
     
     if (swipe.direction == UISwipeGestureRecognizerDirectionLeft) {
         NSLog(@"Left Swipe");
-        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipe=1"];
+        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipeDirection=1"];
         
     }
     
     if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
         NSLog(@"Right Swipe");
-        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipe=2"];
+        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipeDirection=2"];
         
     }
     
