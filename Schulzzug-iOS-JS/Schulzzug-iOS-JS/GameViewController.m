@@ -28,13 +28,16 @@
     
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
+    UISwipeGestureRecognizer *swipeUp = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
     
     // Setting the swipe direction.
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
+    [swipeUp setDirection:UISwipeGestureRecognizerDirectionUp];
     
     swipeLeft.delegate = self;
     swipeRight.delegate = self;
+    swipeUp.delegate = self;
     
     CGFloat scaleFactor = self.view.frame.size.width / defaultgameWidth;
     self.webViewGameRenderer.transform = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
@@ -42,6 +45,7 @@
     // Adding the swipe gesture on WebView
     [self.view addGestureRecognizer:swipeLeft];
     [self.view addGestureRecognizer:swipeRight];
+    [self.view addGestureRecognizer:swipeUp];
 
     
     
@@ -77,6 +81,12 @@
     if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
         NSLog(@"Right Swipe");
         [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipeDirection=2"];
+        
+    }
+    
+    if (swipe.direction == UISwipeGestureRecognizerDirectionUp) {
+        NSLog(@"Up Swipe");
+        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipeDirection=3"];
         
     }
     
