@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Menu View Controller-->
         <scene sceneID="eTS-64-8WA">
             <objects>
-                <viewController id="KMg-N0-L6U" sceneMemberID="viewController">
+                <viewController id="KMg-N0-L6U" customClass="MainMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a3P-78-CVe"/>
                         <viewControllerLayoutGuide type="bottom" id="Fxv-gu-o5x"/>
@@ -24,25 +24,40 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="5VD-QS-5rJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVO-61-Dbq">
-                                <rect key="frame" x="123" y="297" width="129" height="72"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Start" backgroundImage="button">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Rx6-0A-LKe"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="YCd-VN-ICr">
+                                <rect key="frame" x="123" y="257" width="129" height="153"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVO-61-Dbq">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="72"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Start" backgroundImage="button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" id="Rx6-0A-LKe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xru-h2-rkf">
+                                        <rect key="frame" x="0.0" y="81" width="129" height="72"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Feedback" backgroundImage="button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="feedback:" destination="KMg-N0-L6U" eventType="touchUpInside" id="MNX-Ot-f5r"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jVO-61-Dbq" firstAttribute="centerX" secondItem="5VD-QS-5rJ" secondAttribute="centerX" id="PMt-6q-DFD"/>
                             <constraint firstItem="5VD-QS-5rJ" firstAttribute="leading" secondItem="4j5-gW-uig" secondAttribute="leading" id="XiF-LP-pkJ"/>
+                            <constraint firstItem="YCd-VN-ICr" firstAttribute="centerX" secondItem="5VD-QS-5rJ" secondAttribute="centerX" id="YBw-e9-xgb"/>
                             <constraint firstItem="5VD-QS-5rJ" firstAttribute="top" secondItem="4j5-gW-uig" secondAttribute="top" id="YDG-CM-SCQ"/>
                             <constraint firstItem="Fxv-gu-o5x" firstAttribute="top" secondItem="5VD-QS-5rJ" secondAttribute="bottom" id="fgg-Sn-6yz"/>
                             <constraint firstAttribute="trailing" secondItem="5VD-QS-5rJ" secondAttribute="trailing" id="gC6-3z-EVU"/>
-                            <constraint firstItem="jVO-61-Dbq" firstAttribute="centerY" secondItem="5VD-QS-5rJ" secondAttribute="centerY" id="wuL-7t-IBO"/>
+                            <constraint firstItem="YCd-VN-ICr" firstAttribute="centerY" secondItem="5VD-QS-5rJ" secondAttribute="centerY" id="xxK-Cd-TGS"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>

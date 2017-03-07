@@ -16,6 +16,7 @@
 		869534221E6CCB85004A2305 /* Schulzzug_iOS_JSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 869534211E6CCB85004A2305 /* Schulzzug_iOS_JSTests.m */; };
 		8695342D1E6CCB85004A2305 /* Schulzzug_iOS_JSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8695342C1E6CCB85004A2305 /* Schulzzug_iOS_JSUITests.m */; };
 		8695343B1E6CCB9F004A2305 /* Schulzzug-JS in Resources */ = {isa = PBXBuildFile; fileRef = 8695343A1E6CCB9F004A2305 /* Schulzzug-JS */; };
+		86F0CA181E6ECA8900105C1E /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F0CA171E6ECA8900105C1E /* MainMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		8695343D1E6CCBC3004A2305 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		869534401E6CCBD3004A2305 /* XWebView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWebView.framework; path = "../../../Library/Developer/Xcode/DerivedData/XWebView.iOS-eeuhgvuklteaincdhgohgmbykapj/Build/Products/Debug-iphonesimulator/XWebView.framework"; sourceTree = "<group>"; };
 		869534461E6CCD84004A2305 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		86F0CA161E6ECA8900105C1E /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		86F0CA171E6ECA8900105C1E /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				8695343A1E6CCB9F004A2305 /* Schulzzug-JS */,
 				8695340A1E6CCB85004A2305 /* AppDelegate.h */,
 				8695340B1E6CCB85004A2305 /* AppDelegate.m */,
+				86F0CA161E6ECA8900105C1E /* MainMenuViewController.h */,
+				86F0CA171E6ECA8900105C1E /* MainMenuViewController.m */,
 				8695340D1E6CCB85004A2305 /* GameViewController.h */,
 				8695340E1E6CCB85004A2305 /* GameViewController.m */,
 				869534101E6CCB85004A2305 /* Main.storyboard */,
@@ -294,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F0CA181E6ECA8900105C1E /* MainMenuViewController.m in Sources */,
 				8695340F1E6CCB85004A2305 /* GameViewController.m in Sources */,
 				8695340C1E6CCB85004A2305 /* AppDelegate.m in Sources */,
 				869534091E6CCB85004A2305 /* main.m in Sources */,
