@@ -56,7 +56,10 @@
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
-    [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"activateIosMode()"];
+    //[NSTimer scheduledTimerWithTimeInterval:2 repeats:NO block:^(NSTimer * _Nonnull timer) {
+        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"activateIosMode()"];
+   // }];
+    
 }
 
 
@@ -73,20 +76,21 @@
 - (void)handleSwipe:(UISwipeGestureRecognizer *)swipe {
     
     if (swipe.direction == UISwipeGestureRecognizerDirectionLeft) {
-        NSLog(@"Left Swipe");
-        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipeDirection=1"];
+        
+        NSString* result = [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipe_direction=1"];
+        NSLog(@"Left Swipe: %@",result);
         
     }
     
     if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
         NSLog(@"Right Swipe");
-        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipeDirection=2"];
+        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipe_direction=2"];
         
     }
     
     if (swipe.direction == UISwipeGestureRecognizerDirectionUp) {
         NSLog(@"Up Swipe");
-        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipeDirection=3"];
+        [self.webViewGameRenderer stringByEvaluatingJavaScriptFromString:@"swipe_direction=3"];
         
     }
     
