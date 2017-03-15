@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     
-    NSURL* url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Schulzzug-JS/index" ofType:@"html"]];
+    NSURL* url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Schulzzug-JS/public/index" ofType:@"html"]];
     
     [self.webViewGameRenderer loadRequest:[NSURLRequest requestWithURL:url]];
     

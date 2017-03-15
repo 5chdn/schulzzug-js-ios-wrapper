@@ -7,6 +7,7 @@
 //
 
 #import "MainMenuViewController.h"
+#import "GameViewController.h"
 @import SafariServices;
 
 @interface MainMenuViewController ()
@@ -32,6 +33,11 @@
     
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"twitter://user?screen_name=schulzzug"]];
+}
+
+- (IBAction)startGame:(id)sender {
+    GameViewController* gvc = [GameViewController new];
+    [self showViewController:gvc sender:self];
 }
 
 /*

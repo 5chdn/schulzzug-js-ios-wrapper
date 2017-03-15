@@ -30,17 +30,17 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVO-61-Dbq">
                                         <rect key="frame" x="0.0" y="0.0" width="129" height="72"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <state key="normal" title="Start" backgroundImage="button">
+                                        <state key="normal" title="Start" backgroundImage="Button">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="A6e-8x-buz" kind="show" id="U2W-fR-mf0"/>
+                                            <action selector="startGame:" destination="KMg-N0-L6U" eventType="touchUpInside" id="S1s-Ry-kb1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xru-h2-rkf">
                                         <rect key="frame" x="0.0" y="81" width="129" height="72"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <state key="normal" title="Feedback" backgroundImage="button">
+                                        <state key="normal" title="Feedback" backgroundImage="Button">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
@@ -79,10 +79,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dirt.png" translatesAutoresizingMaskIntoConstraints="NO" id="U8d-NV-Rk6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIL-jR-qM1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,7 +107,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="button" width="129" height="72"/>
+        <image name="Button" width="129" height="72"/>
         <image name="dirt.png" width="750" height="1334"/>
         <image name="launch" width="750" height="1334"/>
     </resources>
