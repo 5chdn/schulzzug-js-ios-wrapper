@@ -39,8 +39,7 @@
     swipeRight.delegate = self;
     swipeUp.delegate = self;
     
-    CGFloat scaleFactor = self.view.frame.size.width / defaultgameWidth;
-    self.webViewGameRenderer.transform = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
+    
     
     // Adding the swipe gesture on WebView
     [self.view addGestureRecognizer:swipeLeft];
@@ -53,6 +52,12 @@
     [self.tapticEngine prepare];
     
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    CGFloat scaleFactor = self.view.frame.size.width / defaultgameWidth;
+    NSLog(@"%f",self.view.frame.size.width);
+    self.webViewGameRenderer.transform = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
